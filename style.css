@@ -61,3 +61,17 @@ body{
 .darkmode #theme-switch svg:last-child{
     display: block;
 }
+
+#theme-switch:hover{
+    cursor: pointer;
+}
+
+.password-style,
+.email-style{
+    height: 25px;
+    background-color: var(--base-color);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 4px;
+    
+}
