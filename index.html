@@ -4,7 +4,9 @@
         <title>FIrst Web</title>
         <script type="text/javascript" src="darkmode.js" defer></script>
         <link href ="style.css" rel="stylesheet">
-        <link herf ="login.js">
+        <script src="login.js" defer></script>
+        <script src="recipe-add.js" defer></script>
+
 
     </head>
     
@@ -19,46 +21,23 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/>
             </svg>
-        </button>        
-        
-            <div class="main_div" id="login_div">
-                <h3>Login Authentication</h3>
-                <input type="email" placeholder="Email" id="email_field" class="email-style">
-                <input type="password" placeholder="Password" id="password_field" class="password-style">
-                <button onclick="login()">Login</button>
+        </button>       
+
+        <input class ="search-bar" type="text" placeholder="Search">
+
+        <button id="openModel">add recipe</button>
+        <div class="model" id="model">
+            <div class="model-inner">
+                <h2>hi its me mrio</h2>
+                <p>
+                    i whant some pizza
+                </p>
+                <button id="closeModel">close</button> 
             </div>
+        </div>
 
-            <div class="loggedin_div" id="user_div">
-                <h3>YAYYY! You successfully logged-in using Firebase.....</h3>
-                <button onclick="logout()">Logout</button>
-            </div>
-            
-            <script type="module">
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-            
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
 
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyA63FGi-uVRmUgrHsnyI4e-WJt7Uh2pEHU",
-                authDomain: "login-2d4f9.firebaseapp.com",
-                projectId: "login-2d4f9",
-                storageBucket: "login-2d4f9.firebasestorage.app",
-                messagingSenderId: "639224783007",
-                appId: "1:639224783007:web:b843fcdf80d92d563e82aa",
-                measurementId: "G-DH6T5PQE87"
-            };
+ 
 
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-            </script>
-            <script src="script.js"></script>
-
-            <input class ="search-bar" type="text" placeholder="Search">
         </body>
 </html>
